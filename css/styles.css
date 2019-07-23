@@ -40,46 +40,10 @@ br {
 }
 
 .btn:hover {
-  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
-.fader.fade-out {
-  animation-name: fade-out;
-  animation-duration: 1.5s;
+.card { 
+  border: 0px;
 }
-
-.fader.fade-in {
-  animation-name: fade-in;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade-out {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-} fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
