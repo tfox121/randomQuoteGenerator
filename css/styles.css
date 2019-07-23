@@ -28,11 +28,16 @@ br {
 
 .color-changer {
   background-color: green; 
-  color: white;
+  
 }
 
 .font-color-changer {
   color: green;
+}
+
+.button-color-changer {
+  background-color: green; 
+  color: white;
 }
 
 .socials {

@@ -10,25 +10,25 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
-<body class="color-changer">
+<body class="color-changer" id="animated">
 
   <div class="container-fluid w-100 h-100">
 
-    <div class="row align-items-center h-100 justify-content-center font-color-changer">
+    <div class="row align-items-center h-100 justify-content-center">
       <div class="col-md-6 p-1">
         <div class="bg-light card card-body p-5 m-1">
           <div class="text-center" id="quotewrap">
-            <i class="fas fa-quote-left fa-2x d-inline" id="quotemark"></i>
-            <h1 class="d-inline" id="quote"></h1>
+            <i class="fas fa-quote-left fa-2x d-inline font-color-changer" id="quotemark"></i>
+            <h1 class="d-inline font-color-changer" id="quote"></h1>
           </div>
-          <p class="text-right py-2" id="quoter">-</p>
+          <p class="text-right py-2 font-color-changer" id="quoter">-</p>
           <div class="row">
             <div class="col-md-6">
-              <button class="socials btn btn-default color-changer"><i class="fab fa-twitter"></i></button>
-              <button class="socials btn btn-default color-changer"><i class="fab fa-tumblr"></i></button>
+              <button class="socials btn btn-default button-color-changer"><i class="fab fa-twitter"></i></button>
+              <button class="socials btn btn-default button-color-changer"><i class="fab fa-tumblr"></i></button>
             </div>
             <div class="col-md-6 text-right">
-              <button class="newQuote btn btn-default color-changer" id="newQuote">New quote</button>
+              <button class="newQuote btn btn-default button-color-changer" id="newQuote">New quote</button>
             </div>
           </div>
         </div>
@@ -44,5 +44,6 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
 <script src="js/script.js"></script>
 </html>
