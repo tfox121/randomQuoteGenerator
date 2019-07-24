@@ -38,6 +38,7 @@ br {
 .button-color-changer {
   background-color: green; 
   color: white;
+  text-decoration: none
 }
 
 .socials {
@@ -52,4 +53,25 @@ br {
 
 .card { 
   border: 0px;
+}
+
+a:link
+{
+   color: white;
+   text-decoration: none;
+}
+a:visited
+{
+   color: white;
+   text-decoration: none;
+}
+a:hover
+{
+   color: white;
+   text-decoration: none;
+}
+a:active
+{
+   color: white;
+   text-decoration: none;
 }

@@ -1,38 +1,38 @@
-<html lang="en">
+<html lang='en'>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="random quotes" content="Random Quote Machine">
+  <meta charset='utf-8'>
+  <meta name='random quotes' content='Random Quote Machine'>
   <title>Random Quote Machine</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' type='text/css'>
+  <link rel='stylesheet' href='css/styles.css' type='text/css'>
 </head>
 
-<body class="color-changer" id="animated">
+<body class='color-changer' id='animated'>
 
-  <div class="container-fluid w-100 h-100">
+  <div class='container-fluid w-100 h-100'>
 
-    <div class="row align-items-center h-100 justify-content-center">
-      <div class="col-md-6 p-1">
-        <div class="bg-light card card-body p-5 m-1">
-          <div class="text-center" id="quotewrap">
-            <i class="fas fa-quote-left fa-2x d-inline font-color-changer" id="quotemark"></i>
-            <h1 class="d-inline font-color-changer" id="quote"></h1>
+    <div class='row align-items-center h-100 justify-content-center'>
+      <div class='col-md-6 p-1'>
+        <div class='bg-light card card-body p-5 m-1' id="quote-box">
+          <div class='text-center' id='quote'>
+            <i class='fas fa-quote-left fa-2x d-inline font-color-changer' id='quotemark'></i>
+            <h1 class='d-inline font-color-changer' id='text'></h1>
           </div>
-          <p class="text-right py-2 font-color-changer" id="quoter">-</p>
-          <div class="row">
-            <div class="col-md-6">
-              <button class="socials btn btn-default button-color-changer"><i class="fab fa-twitter"></i></button>
-              <button class="socials btn btn-default button-color-changer"><i class="fab fa-tumblr"></i></button>
+          <p class='text-right py-2 font-color-changer' id='author'>-</p>
+          <div class='row'>
+            <div class='col-md-6'>
+              <button class='socials btn btn-default button-color-changer'><a title="Post this quote to Twitter" class='fab fa-twitter' id='tweet-quote' target=”_blank”></a></button>
+              <button class='socials btn btn-default button-color-changer'><a title="Post this quote to Tumblr" class='fab fa-tumblr' id='tumblr-quote' target=”_blank” href="https://www.tumblr.com"></a></button>
             </div>
-            <div class="col-md-6 text-right">
-              <button class="newQuote btn btn-default button-color-changer" id="newQuote">New quote</button>
+            <div class='col-md-6 text-right'>
+              <button class='newQuote btn btn-default button-color-changer' id='new-quote'>New quote</button>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center tag pt-1">by tom</div>
+        <div class='row justify-content-center tag pt-1'>by tom</div>
       </div>
     </div>
 
@@ -41,9 +41,10 @@
 </body>
 
 <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
-<script src="js/script.js"></script>
+  src='https://code.jquery.com/jquery-3.4.1.min.js'
+  integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo='
+  crossorigin='anonymous'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js'></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src='js/script.js'></script>
 </html>
