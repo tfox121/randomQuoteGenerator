@@ -3,16 +3,18 @@ $(document).ready(function() {
   let randomQuote
   $.ajax({url: 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json', success: function(result){
     json = JSON.parse(result)
-    let randomQuote = quoteGenerator(getRandomInt(json), json);
-    quoteChanger(json, randomQuote);
-    tweetComposer(json, randomQuote)
+    dataRefresh(json, randomQuote)
   }});
   $('#new-quote').on('click', function(){
-    randomQuote = quoteGenerator(getRandomInt(json), json);
-    quoteChanger(json, randomQuote)
-    tweetComposer(json, randomQuote)
+    dataRefresh(json, randomQuote)
   });
 });
+
+function dataRefresh(json, randomQuote) {
+  randomQuote = quoteGenerator(getRandomInt(json), json);
+  quoteChanger(json, randomQuote);
+  tweetComposer(json, randomQuote)  
+}
 
 function quoteGenerator(num, json) {
   return json['quotes'][num];
